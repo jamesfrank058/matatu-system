@@ -1,0 +1,44 @@
+.dform-wrapper{
+    width: 40%;
+    padding-top: 10px;
+    background-color:#00b894;
+    position: absolute;
+    top:139px;
+    left: 0;
+    height:100vh;
+}
+
+.dform-wrapper form {
+    position: absolute;
+    height: 100vh;
+    top:0;
+    left: 0;
+    width:100%;
+    margin: auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+/* styles for the show drivers */
+
+.show-drivers{
+    width: 60%;
+    padding-top: 10px;
+    background-color: rgb(127, 255, 212, .5);
+    position: absolute;
+    top:139px;
+    right: 0;
+    overflow: auto;
+
+ 
+    height:100vh;
+}
+
+.show-drivers .inner-div{
+    width:100%;
+    margin: auto;
+    padding: 10px;
+    color: rgb(180, 178, 178);
+
+}

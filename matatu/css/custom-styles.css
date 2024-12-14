@@ -1,0 +1,157 @@
+
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Global styles */
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Navbar styles */
+.navbar {
+  background-color:#079992;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  /* border: 1px solid black; */
+  padding: 5px 5px;
+}
+
+.nav-links a {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.nav-links a:hover{
+  color: #09ff5b;
+} 
+
+.nav-links a::before,
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: -2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a::before {
+  left: 50%;
+}
+
+.nav-links a::after {
+  right: 50%;
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Main content styles */
+h1 {
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgb(168, 36, 151);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Add scrollbar styles for WebKit */
+*::-webkit-scrollbar {
+  width: 1px; /* Adjust the width as desired */
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #6d0049;
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* Add scrollbar styles for Gecko */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8500c2 #f1f1f1; /* Adjust the colors as desired */
+}
+
+*::-moz-scrollbar {
+  width: 8px; /* Adjust the width as desired */
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: #8500c2;
+  border-radius: 4px;
+}
+
+*::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+#mylogo{
+  color: rgb(22, 255, 208);
+  font-size: 30px;
+}
